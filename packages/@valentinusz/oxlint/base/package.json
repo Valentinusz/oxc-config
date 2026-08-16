@@ -1,10 +1,20 @@
 {
-    "name": "@valentinusz/oxlint-config-base",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "private": true
+  "name": "@valentinusz/oxlint-config",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "oxlint": "catalog:",
+    "oxlint-tsgolint": "catalog:"
+  }
 }

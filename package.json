@@ -1,16 +1,21 @@
 {
   "name": "valentinusz-config",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "packages:build": "pnpm -r build"
   },
   "devDependencies": {
-    "oxfmt": "^0.63.0",
+    "@types/node": "^24.13.3",
+    "@valentinusz/oxfmt-config": "workspace:*",
+    "@valentinusz/oxlint-config": "workspace:*",
+    "@valentinusz/oxlint-config-react": "workspace:*",
+    "oxfmt": "catalog:",
+    "oxlint": "catalog:",
+    "oxlint-tsgolint": "catalog:",
     "typescript": "~6.0.2",
-    "vite": "^8.2.0"
+    "unplugin-dts": "^1.0.3",
+    "vite": "catalog:"
   }
 }
