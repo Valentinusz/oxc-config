@@ -1,5 +1,7 @@
-import type { OxlintConfig } from "oxlint";
+﻿import type { OxlintConfig } from "oxlint";
 
-export const reactPerfConfig: OxlintConfig = {
-  rules: {},
-};
+export const reactPerfConfig = {
+  plugins: ["react-perf"],
+  rules: {
+  },
+} satisfies OxlintConfig;
