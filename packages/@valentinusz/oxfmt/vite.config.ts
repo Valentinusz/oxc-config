@@ -13,7 +13,7 @@ export default defineConfig({
       fileName: "index",
     },
     rolldownOptions: {
-      external: Object.keys(packageJson.peerDependencies ?? {}),
+      external: Object.keys(packageJson.peerDependencies),
     },
   },
 });

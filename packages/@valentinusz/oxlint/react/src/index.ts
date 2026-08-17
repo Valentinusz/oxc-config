@@ -1,7 +1,7 @@
 import { defineConfig } from "oxlint";
-import { jsxA11yConfig } from "./jsx-a11y.ts";
-import { reactConfig } from "./react.ts";
-import { reactPerfConfig } from "./react-perf.ts";
+import { jsxA11yConfig } from "./plugins/jsx-a11y.config.ts";
+import { reactConfig } from "./plugins/react/react.config.ts";
+import { reactPerfConfig } from "./plugins/react-perf.config.ts";
 
 export const oxlintConfigReact = defineConfig({
   extends: [jsxA11yConfig, reactConfig, reactPerfConfig],

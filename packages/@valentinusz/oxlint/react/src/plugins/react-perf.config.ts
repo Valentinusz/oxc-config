@@ -3,9 +3,7 @@
 export const reactPerfConfig = {
   plugins: ["react-perf"],
   rules: {
-    // -----------------
-    // Perf rules
-    // -----------------
+    // ️ℹ️ All rules prevent bugs that stem from values being recreated every render.
 
     // ✅ react-perf/jsx-no-jsx-as-prop
     // Prevent JSX elements that are local to the current method from being used as values of JSX props.

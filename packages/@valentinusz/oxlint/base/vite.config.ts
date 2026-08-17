@@ -5,6 +5,9 @@ import packageJson from "./package.json" with { type: "json" };
 
 export default defineConfig({
   plugins: [dts()],
+  resolve: {
+    tsconfigPaths: true,
+  },
   build: {
     emptyOutDir: true,
     lib: {
@@ -13,7 +16,7 @@ export default defineConfig({
       fileName: "index",
     },
     rolldownOptions: {
-      external: Object.keys(packageJson.peerDependencies ?? {}),
+      external: Object.keys(packageJson.peerDependencies),
     },
   },
 });
