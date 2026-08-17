@@ -1,21 +1,21 @@
-import type { OxlintConfig } from "oxlint";
+import type { OxlintConfig } from 'oxlint';
 
 export const unicornSuspiciousConfig = {
   rules: {
     // ✅ unicorn/consistent-function-scoping
     // Disallow functions that are declared in a scope which does not capture any variables from the outer scope.
     // Moving function declarations to the highest possible scope improves readability and performance.
-    "unicorn/consistent-function-scoping": "error",
+    'unicorn/consistent-function-scoping': 'error',
 
     // ✅ unicorn/no-accessor-recursion
     // Disallow recursive access to this within getters and setters.
     // Useful for catching bugs.
-    "unicorn/no-accessor-recursion": "error",
+    'unicorn/no-accessor-recursion': 'error',
 
     // ✅ unicorn/no-array-fill-with-reference-type
     // Disallows using reference values as Array#fill() values.
     // Useful for preventing bugs.
-    "unicorn/no-array-fill-with-reference-type": "error",
+    'unicorn/no-array-fill-with-reference-type': 'error',
 
     // ❌ unicorn/no-array-reverse
     // Prefer using Array#toReversed() over Array#reverse().
@@ -36,7 +36,7 @@ export const unicornSuspiciousConfig = {
     // ✅ unicorn/prefer-add-event-listener
     // Enforces the use of .addEventListener() and .removeEventListener() over their on-function counterparts.
     // Best practice.
-    "unicorn/prefer-add-event-listener": "error",
+    'unicorn/prefer-add-event-listener': 'error',
 
     // ❌ unicorn/require-module-specifiers
     // Enforce a non-empty specifier list in import and export statements.

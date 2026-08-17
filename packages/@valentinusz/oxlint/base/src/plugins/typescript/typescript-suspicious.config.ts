@@ -1,4 +1,4 @@
-import type { OxlintConfig } from "oxlint";
+import type { OxlintConfig } from 'oxlint';
 
 export const typescriptSuspiciousConfig = {
   rules: {
@@ -15,19 +15,19 @@ export const typescriptSuspiciousConfig = {
     // namespace. This rule also reports classes that have only a constructor and no fields. Those classes can generally
     // be replaced with a standalone function.
     // Said construct is pointless, use global functions with namespace import instead.
-    "typescript/no-extraneous-class": "error",
+    'typescript/no-extraneous-class': 'error',
 
     // ✅ typescript/no-unnecessary-boolean-literal-compare
     // 💭 Type aware.
     // This rule disallows unnecessary equality comparisons with boolean literals.
     // Makes code easier to read.
-    "typescript/no-unnecessary-boolean-literal-compare": "error",
+    'typescript/no-unnecessary-boolean-literal-compare': 'error',
 
     // ✅ typescript/no-unnecessary-template-expression
     // 💭 Type aware.
     // Disallows unnecessary template expressions (interpolations) that can be simplified.
     // Static string literal expressions or expressions that are already strings can be simplified.
-    "typescript/no-unnecessary-template-expression": "error",
+    'typescript/no-unnecessary-template-expression': 'error',
 
     // ❌ typescript/no-unnecessary-type-arguments
     // 💭 Type aware.
@@ -37,7 +37,7 @@ export const typescriptSuspiciousConfig = {
     // 💭 Type aware.
     // This rule disallows type assertions that do not change the type of an expression.
     // Type assertions that don't actually change the type of an expression are unnecessary and can be safely removed.
-    "typescript/no-unnecessary-type-assertion": "error",
+    'typescript/no-unnecessary-type-assertion': 'error',
 
     // ❌ typescript/no-unnecessary-type-constraint
     // 💭 Type aware.
@@ -48,20 +48,20 @@ export const typescriptSuspiciousConfig = {
     // 💭 Type aware.
     // Disallow unnecessary type conversion expressions.
     // Type conversions that do not change a value's type or runtime behavior add noise and can obscure intent.
-    "typescript/no-unnecessary-type-conversion": "error",
+    'typescript/no-unnecessary-type-conversion': 'error',
 
     // ✅ typescript/no-unnecessary-type-parameters
     // 💭 Type aware.
     // Disallow type parameters that are declared but not meaningfully used.
     // Unnecessary type parameters make signatures noisier and harder to understand, and they often hide opportunities
     // to simplify APIs.
-    "typescript/no-unnecessary-type-parameters": "error",
+    'typescript/no-unnecessary-type-parameters': 'error',
 
     // ✅ typescript/no-unsafe-enum-comparison
     // 💭 Type aware.
     // This rule disallows comparing an enum value with a non-enum value.
     // Enums are discouraged, but this is useful.
-    "typescript/no-unsafe-enum-comparison": "error",
+    'typescript/no-unsafe-enum-comparison': 'error',
 
     // ✅ typescript/no-unsafe-type-assertion
     // 💭 Type aware.
@@ -70,6 +70,6 @@ export const typescriptSuspiciousConfig = {
     // assertions that broaden a type are safe because TypeScript essentially knows less about a type. Instead of using
     // type assertions to narrow a type, it's better to rely on type guards, which help avoid potential runtime errors
     // caused by unsafe type assertions.
-    "typescript/no-unsafe-type-assertion": "error",
+    'typescript/no-unsafe-type-assertion': 'error',
   },
 } satisfies OxlintConfig;

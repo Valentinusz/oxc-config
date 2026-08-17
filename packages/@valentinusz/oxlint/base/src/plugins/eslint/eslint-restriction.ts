@@ -1,4 +1,4 @@
-import type { OxlintConfig } from "oxlint";
+import type { OxlintConfig } from 'oxlint';
 
 export const eslintRestrictionConfig = {
   rules: {
@@ -13,17 +13,17 @@ export const eslintRestrictionConfig = {
     // ✅ eslint/no-alert
     // Disallow use of the alert function.
     // Alert and similar functions are obtrusive and should be replaced with dedicated UI elements.
-    "eslint/no-alert": "error",
+    'eslint/no-alert': 'error',
 
     // ✅ eslint/no-bitwise
     // Disallow bitwise operators.
     // These operators are rarely used and usually are typos of boolean operators.
-    "eslint/no-bitwise": "error",
+    'eslint/no-bitwise': 'error',
 
     // ✅ eslint/no-console
     // Disallow the use of console.
     // It is bad practice to use console.log in production code.
-    "eslint/no-console": "error",
+    'eslint/no-console': 'error',
 
     // ❌ eslint/no-div-regex
     // Disallow division operators explicitly at the beginning of regular expressions.
@@ -32,12 +32,12 @@ export const eslintRestrictionConfig = {
     // ✅ eslint/no-empty
     // Disallow empty block statements.
     // Usually a sign of incomplete code.
-    "eslint/no-empty": "error",
+    'eslint/no-empty': 'error',
 
     // ✅ eslint/no-empty-function
     // Disallows the usage of empty functions.
     // Can lead to confusion it is better to define a dedicated variable that represents this. E.g., NOOP_VOID_FUNCTION.
-    "eslint/no-empty-function": "error",
+    'eslint/no-empty-function': 'error',
 
     // ❌ eslint/no-eq-null
     // Disallow null comparisons without type-checking operators.
@@ -62,12 +62,12 @@ export const eslintRestrictionConfig = {
     // ✅ eslint/no-regex-spaces
     // Disallow 2+ consecutive spaces in regular expressions.
     // Useful for readability.
-    "no-regex-spaces": "error",
+    'no-regex-spaces': 'error',
 
     // ✅ eslint/no-restricted-globals
     // Disallow specified global variables.
     // Useful to prevent mixing up shadowed variables.
-    "eslint/no-restricted-globals": ["error", "event"],
+    'eslint/no-restricted-globals': ['error', 'event'],
 
     // ❌ eslint/no-restricted-imports
     // Allows you to specify imports that you don’t want to use in your application.
@@ -92,7 +92,7 @@ export const eslintRestrictionConfig = {
     // ✅ eslint/no-var
     // Disables var.
     // let and const are preferred because they scope the variable to the current block.
-    "eslint/no-var": "error",
+    'eslint/no-var': 'error',
 
     // ❌ eslint/no-void
     // Disallow void operators.
@@ -101,6 +101,6 @@ export const eslintRestrictionConfig = {
     // ❌ eslint/unicode-bom
     // Disallow the use of byte order mark.
     // UTF-8 is the standard for text files, thus BOM is not needed.
-    "eslint/unicode-bom": "error",
+    'eslint/unicode-bom': 'error',
   },
 } satisfies OxlintConfig;

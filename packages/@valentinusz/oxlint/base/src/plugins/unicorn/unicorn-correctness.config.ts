@@ -1,4 +1,4 @@
-import type { OxlintConfig } from "oxlint";
+import type { OxlintConfig } from 'oxlint';
 
 export const unicornCorrectnessConfig = {
   rules: {
@@ -7,6 +7,6 @@ export const unicornCorrectnessConfig = {
     // ❌ unicorn/prefer-string-starts-ends-with
     // ⚙️ Default. 🗑️ Deprecated.
     // Prefer String#startsWith() and String#endsWith() over using a regex with /^foo/ or /foo$/.
-    "unicorn/prefer-string-starts-ends-with": "off",
+    'unicorn/prefer-string-starts-ends-with': 'off',
   },
 } satisfies OxlintConfig;

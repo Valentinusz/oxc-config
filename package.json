@@ -4,7 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "packages:build": "pnpm -r build"
+    "packages:build": "pnpm -r build",
+    "fmt:format": "oxfmt --write",
+    "fmt:check": "oxfmt --check",
+    "lint:fix": "oxlint --fix",
+    "lint:check": "oxlint --check"
   },
   "devDependencies": {
     "@types/node": "^24.13.3",

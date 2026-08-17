@@ -1,4 +1,4 @@
-import type { OxlintConfig } from "oxlint";
+import type { OxlintConfig } from 'oxlint';
 
 export const eslintSuspiciousConfig = {
   rules: {
@@ -9,7 +9,7 @@ export const eslintSuspiciousConfig = {
     // ✅ eslint/no-extend-native
     // Disallow extending native objects.
     // Can lead to unexpected bugs.
-    "eslint/no-extend-native": "error",
+    'eslint/no-extend-native': 'error',
 
     // ❌ eslint/no-extra-bind
     // Disallow unnecessary calls to .bind().
@@ -22,7 +22,7 @@ export const eslintSuspiciousConfig = {
     // ✅ eslint/no-new
     // Disallow the use of the new operator when not part of an assignment or comparison.
     // Not storing and using the newly created object is often a bug.
-    "eslint/no-new": "error",
+    'eslint/no-new': 'error',
 
     // ❌ eslint/no-shadow
     // Disallow variable declarations from shadowing variables declared in the outer scope.
@@ -34,17 +34,17 @@ export const eslintSuspiciousConfig = {
 
     // ❌ eslint/no-unexpected-multiline
     // Disallow confusing multiline expressions
-    "eslint/no-unexpected-multiline": "error",
+    'eslint/no-unexpected-multiline': 'error',
 
     // ❌ eslint/no-unmodified-loop-condition
     // Disallow references in loop conditions that are never modified within the loop.
     // This can lead to infinite loops.
-    "eslint/no-unmodified-loop-condition": "error",
+    'eslint/no-unmodified-loop-condition': 'error',
 
     // ✅ eslint/no-unneeded-ternary
     // Disallow ternary operators when simpler alternatives exist.
     // Makes code more readable.
-    "eslint/no-unneeded-ternary": "error",
+    'eslint/no-unneeded-ternary': 'error',
 
     // ❌ eslint/no-useless-concat
     // Disallow unnecessary concatenation of literals or template literals.
@@ -58,6 +58,6 @@ export const eslintSuspiciousConfig = {
     // Enforces that when re-throwing an error in a catch block, the original error is preserved using the `cause`
     // property.
     // Re-throwing an error without preserving the original error loses important debugging information.
-    "eslint/preserve-caught-error": "error",
+    'eslint/preserve-caught-error': 'error',
   },
 } satisfies OxlintConfig;

@@ -1,4 +1,4 @@
-import type { OxlintConfig } from "oxlint";
+import type { OxlintConfig } from 'oxlint';
 
 export const unicornRestrictionConfig = {
   rules: {
@@ -9,7 +9,7 @@ export const unicornRestrictionConfig = {
     // ✅ unicorn/no-abusive-eslint-disable
     // Disallows oxlint-disable or eslint-disable comments without specifying rules.
     // Best practice.
-    "unicorn/no-abusive-eslint-disable": "error",
+    'unicorn/no-abusive-eslint-disable': 'error',
 
     // ❌ unicorn/no-anonymous-default-export
     // Disallows anonymous functions and classes as default exports.
@@ -18,7 +18,7 @@ export const unicornRestrictionConfig = {
     // ✅ unicorn/no-array-for-each
     // Forbids the use of Array#forEach in favor of a for loop.
     // For-of is better.
-    "unicorn/no-array-for-each": "error",
+    'unicorn/no-array-for-each': 'error',
 
     // ❌ unicorn/no-array-reduce
     // Disallow Array#reduce() and Array#reduceRight().
@@ -27,12 +27,12 @@ export const unicornRestrictionConfig = {
     // ✅ unicorn/no-document-cookie
     // Disallows direct use of document.cookie.
     // Best practice.
-    "unicorn/no-document-cookie": "error",
+    'unicorn/no-document-cookie': 'error',
 
     // ✅ unicorn/no-length-as-slice-end
     // Disallow using length as the end argument of a slice call.
     // Best practice.
-    "unicorn/no-length-as-slice-end": "error",
+    'unicorn/no-length-as-slice-end': 'error',
 
     // ❌ unicorn/no-magic-array-flat-depth
     // Disallow magic numbers for Array.prototype.flat depth.
@@ -45,7 +45,7 @@ export const unicornRestrictionConfig = {
     // ✅ unicorn/no-useless-error-capture-stack-trace
     // Disallows unnecessary Error.captureStackTrace(…) in error constructors.
     // Best practice.
-    "unicorn/no-useless-error-capture-stack-trace": "error",
+    'unicorn/no-useless-error-capture-stack-trace': 'error',
 
     // ❌ unicorn/prefer-modern-math-apis
     // Checks for usage of legacy patterns for mathematical operations.
@@ -58,11 +58,11 @@ export const unicornRestrictionConfig = {
     // ✅ unicorn/prefer-node-protocol
     // Prefer using the node: protocol when importing Node.js built-in modules.
     // Best practice. Node.js recommends this.
-    "unicorn/prefer-node-protocol": "error",
+    'unicorn/prefer-node-protocol': 'error',
 
     // ✅ unicorn/prefer-number-properties
     // Disallows use of parseInt(), parseFloat(), isNaN(), isFinite(), NaN, Infinity and -Infinity as global variables.
     // Best practice.
-    "unicorn/prefer-number-properties": "error",
+    'unicorn/prefer-number-properties': 'error',
   },
 } satisfies OxlintConfig;

@@ -1,5 +1,6 @@
-import type { OxlintConfig } from "oxlint";
-import { CONFIG_FILES } from "@/constants.ts";
+import { CONFIG_FILES } from '@/constants.ts';
+
+import type { OxlintConfig } from 'oxlint';
 
 export const importRestrictionConfig = {
   rules: {
@@ -7,8 +8,8 @@ export const importRestrictionConfig = {
     // Some file resolve algorithms allow you to omit the file extension within the import source path.
     // Specifying extensions improves bundler performance.
     // Extensions are not required for packages.
-    "import/extensions": [
-      "error",
+    'import/extensions': [
+      'error',
       {
         ignorePackages: true,
       },
@@ -30,7 +31,7 @@ export const importRestrictionConfig = {
     // Disallows modules from having default exports.
     // No default export makes refactoring and auto-imports easier.
     // Some common config files that make use of default exports are allowed (see overrides below).
-    "import/no-default-export": "error",
+    'import/no-default-export': 'error',
 
     // ❌ import/no-dynamic-require
     // Forbids imports that use an expression for the module argument.
@@ -40,12 +41,12 @@ export const importRestrictionConfig = {
     // Forbids importing modules from parent directories using relative paths.
     // This restriction enforces tree-like folder structures instead of complex graph-like structures, making large
     // codebases easier to maintain.
-    "import/no-relative-parent-imports": "error",
+    'import/no-relative-parent-imports': 'error',
 
     // ❌ import/no-webpack-loader-syntax
     // Forbids using Webpack loader syntax directly in import or require statements.
     // Not useful enough.
-    "import/no-webpack-loader-syntax": "error",
+    'import/no-webpack-loader-syntax': 'error',
 
     // ❌ import/unambiguous
     // Warns if a module could be mistaken for a script instead of an ES module.
@@ -55,7 +56,7 @@ export const importRestrictionConfig = {
     {
       files: [...CONFIG_FILES],
       rules: {
-        "import/no-default-export": "off",
+        'import/no-default-export': 'off',
       },
     },
   ],

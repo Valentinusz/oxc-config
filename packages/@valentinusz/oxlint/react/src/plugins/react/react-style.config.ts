@@ -1,4 +1,4 @@
-import type { OxlintConfig } from "oxlint";
+import type { OxlintConfig } from 'oxlint';
 
 export const reactStyleConfig = {
   rules: {
@@ -9,29 +9,29 @@ export const reactStyleConfig = {
     // ✅ react/hook-use-state
     // Ensure destructuring and symmetric naming of useState hook value and setter variables.
     // Best practice.
-    "react/hook-use-state": "error",
+    'react/hook-use-state': 'error',
 
     // ✅ react/jsx-boolean-value
     // Enforce a consistent boolean attribute style in your code.
     // Best practice.
-    "react/jsx-boolean-value": "error",
+    'react/jsx-boolean-value': 'error',
 
     // ✅ react/jsx-curly-brace-presence
     // Disallow unnecessary JSX expressions when literals alone are sufficient or enforce JSX expressions on literals
     // in JSX children or attributes.
-    "react/jsx-curly-brace-presence": [
-      "error",
+    'react/jsx-curly-brace-presence': [
+      'error',
       {
-        props: "never",
-        propElementValues: "always",
-        children: "never",
+        props: 'never',
+        propElementValues: 'always',
+        children: 'never',
       },
     ],
 
     // ✅ react/jsx-fragments
     // Enforces the shorthand or standard form for React Fragments.
     // Best practice.
-    "react/jsx-fragments": "error",
+    'react/jsx-fragments': 'error',
 
     // ❌ react/jsx-handler-names
     // Ensures that any component or prop methods used to handle events are correctly prefixed.
@@ -44,7 +44,7 @@ export const reactStyleConfig = {
     // ✅ react/jsx-pascal-case
     // Enforce PascalCase for user-defined JSX components.
     // Best practice.
-    "react/jsx-pascal-case": "error",
+    'react/jsx-pascal-case': 'error',
 
     // ❌ react/jsx-props-no-spreading
     // Disallow JSX prop spreading.
@@ -65,7 +65,7 @@ export const reactStyleConfig = {
     // ✅ react/self-closing-comp
     // Detects components without children which can be self-closed to avoid unnecessary extra closing tags.
     // More readable.
-    "react/self-closing-comp": "error",
+    'react/self-closing-comp': 'error',
 
     // ❌ react/state-in-constructor
     // Enforces the state initialization style to be either in a constructor or with a class property.

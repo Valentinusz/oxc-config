@@ -1,16 +1,16 @@
-import type { OxlintConfig } from "oxlint";
+import type { OxlintConfig } from 'oxlint';
 
 export const reactSuspiciousConfig = {
   rules: {
     // ✅ react/iframe-missing-sandbox
     // Enforce the sandbox attribute on iframe elements.
     // Security.
-    "react/iframe-missing-sandbox": "error",
+    'react/iframe-missing-sandbox': 'error',
 
     // ✅ react/jsx-no-comment-textnodes
     // This rule prevents comment strings (e.g. beginning with // or /*) from being accidentally injected as a text node
     // in JSX statements.
-    "react/jsx-no-comment-textnodes": "error",
+    'react/jsx-no-comment-textnodes': 'error',
 
     // ❌ react/jsx-no-script-url
     // Disallow usage of `javascript:` URLs.
@@ -23,7 +23,7 @@ export const reactSuspiciousConfig = {
     // ✅ react/no-unstable-nested-components
     // Disallows defining React components inside other components.
     // Performance.
-    "react/no-unstable-nested-components": "error",
+    'react/no-unstable-nested-components': 'error',
 
     // ❌ react/react-in-jsx-scope
     // Enforces that React is imported and in-scope when using JSX syntax.

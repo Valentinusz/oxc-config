@@ -1,4 +1,4 @@
-import type { OxlintConfig } from "oxlint";
+import type { OxlintConfig } from 'oxlint';
 
 export const reactRestrictionConfig = {
   rules: {
@@ -33,12 +33,12 @@ export const reactRestrictionConfig = {
     // ✅ react/no-clone-element
     // Prevents the usage of React.cloneElement, which is considered an antipattern in React.
     // Prevents bad practice.
-    "react/no-clone-element": "error",
+    'react/no-clone-element': 'error',
 
     // ✅ react/no-danger
     // This rule prevents the use of dangerouslySetInnerHTML prop.
     // Prevents bad practice.
-    "react/no-danger": "error",
+    'react/no-danger': 'error',
 
     // ❌ react/no-multi-comp
     // Prevents multiple React components from being defined in the same file.
@@ -47,7 +47,7 @@ export const reactRestrictionConfig = {
     // ✅ react/no-react-children
     // Disallows the usage of React.Children, as it is considered a bad practice.
     // Prevents bad practice.
-    "react/no-react-children": "error",
+    'react/no-react-children': 'error',
 
     // ❌ react/no-unknown-property
     // Disallow usage of unknown DOM properties.
@@ -59,11 +59,11 @@ export const reactRestrictionConfig = {
     // exports and common entry points (e.g. `createRoot(...).render(<App />)`) to match what integrations like
     // react-refresh expect.
     // This rule is very useful but usually needs tweaking when using external libraries.
-    "react/only-export-components": "error",
+    'react/only-export-components': 'error',
 
     // ✅ react/prefer-function-component
     // Enforces that React components are written as function components instead of class components.
     // Best practice.
-    "react/prefer-function-component": "error",
+    'react/prefer-function-component': 'error',
   },
 } satisfies OxlintConfig;

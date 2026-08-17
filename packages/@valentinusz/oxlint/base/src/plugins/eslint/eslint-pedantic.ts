@@ -1,4 +1,4 @@
-import type { OxlintConfig } from "oxlint";
+import type { OxlintConfig } from 'oxlint';
 
 export const eslintPedanticConfig = {
   rules: {
@@ -14,7 +14,7 @@ export const eslintPedanticConfig = {
     // Requires the use of the === and !== operators, disallowing the use of == and !=.
     // It's easy to mix up == and ===, which can lead to bugs due to unexpected type conversions.
     // === is also required for null, because x == null is also true if x is undefined
-    "eslint/eqeqeq": ["error"],
+    'eslint/eqeqeq': ['error'],
 
     // ❌ eslint/max-classes-per-file
     // Enforce a maximum number of classes per file.
@@ -35,17 +35,17 @@ export const eslintPedanticConfig = {
     // ✅ eslint/no-array-constructor
     // Disallow Array constructors.
     // Literal is preferred for defining an array.
-    "eslint/no-array-constructor": "error",
+    'eslint/no-array-constructor': 'error',
 
     // ✅ eslint/no-case-declarations
     // Disallow labels that share a name with a variable.
     // Usually a sign the programmer forgot the open a new block for the switch case.
-    "eslint/no-case-declarations": "error",
+    'eslint/no-case-declarations': 'error',
 
     // ✅ eslint/no-constructor-return
     // Disallow return statements in class constructors.
     // Usually a sign the programmer copy-pasted code into the constructor but forgot to reread it.
-    "eslint/no-constructor-return": "error",
+    'eslint/no-constructor-return': 'error',
 
     // ❌ eslint/no-else-return
     // Disallow else blocks after return statements in if statements.
@@ -54,7 +54,7 @@ export const eslintPedanticConfig = {
     // ✅ eslint/no-fallthrough
     // Disallow fallthrough of case statements.
     // Fallthrough can easily lead to bugs, but is useful when two cases have the exact same handling.
-    "eslint/no-fallthrough": ["error", { allowEmptyCase: true }],
+    'eslint/no-fallthrough': ['error', { allowEmptyCase: true }],
 
     // ❌ eslint/no-inline-comments
     // Disallow inline comments after code.
@@ -79,17 +79,17 @@ export const eslintPedanticConfig = {
     // ✅ eslint/no-negated-condition
     // Disallow new operators with the String, Number, and Boolean objects.
     // Can lead to unexpected bugs.
-    "eslint/no-new-wrappers": ["error"],
+    'eslint/no-new-wrappers': ['error'],
 
     // ✅ eslint/no-object-constructor
     // Disallow calls to the Object constructor without an argument.
     // This is only useful for creating empty objects, for which {} is preferred.
-    "eslint/no-object-constructor": "off",
+    'eslint/no-object-constructor': 'off',
 
     // ✅ eslint/no-promise-executor-return
     // Disallow returning values from Promise executor functions.
     // Executor function should not return anything and instead use resolve / reject.
-    "eslint/no-promise-executor-return": "error",
+    'eslint/no-promise-executor-return': 'error',
 
     // ❌ eslint/no-prototype-builtins
     // Disallow calling some Object.prototype methods directly on objects.
@@ -102,7 +102,7 @@ export const eslintPedanticConfig = {
     // ❌ eslint/no-self-compare
     // Disallow comparisons where both sides are exactly the same.
     // This is always a bug.
-    "eslint/no-self-compare": "error",
+    'eslint/no-self-compare': 'error',
 
     // ❌ eslint/no-throw-literal
     // Disallow throwing literals as exceptions.
@@ -111,12 +111,12 @@ export const eslintPedanticConfig = {
     // ✅ eslint/no-useless-return
     // Disallows redundant return statements.
     // Makes code more readable.
-    "eslint/no-useless-return": "error",
+    'eslint/no-useless-return': 'error',
 
     // ⚠️ eslint/no-warning-comments
     // Disallows warning comments such as TODO, FIXME, XXX in code.
     // These comments are useful, but should be brought to developer attention.
-    "eslint/no-warning-comments": "warn",
+    'eslint/no-warning-comments': 'warn',
 
     // ❌ eslint/prefer-promise-reject-errors
     // Require using Error objects as Promise rejection reasons.
@@ -125,17 +125,17 @@ export const eslintPedanticConfig = {
     // ✅ eslint/radix
     // Enforce the use of the radix parameter when using parseInt().
     // Omitting reads to radix being determined automatically, which might lead to unpredictable results.
-    "eslint/radix": "error",
+    'eslint/radix': 'error',
 
     // ✅ eslint/require-await
     // Disallow async functions which have no await expression.
     // Usually missing await is a sign of a mistake.
-    "eslint/require-await": "error",
+    'eslint/require-await': 'error',
 
     // ✅ eslint/require-unicode-regexp
     // Enforce the use of u or v flag on regular expressions.
     // Makes UTF-16 comparisons function correctly, prevents silently ignoring syntax errors.
-    "eslint/require-unicode-regexp": "error",
+    'eslint/require-unicode-regexp': 'error',
 
     // ❌ eslint/sort-vars
     // Enforce sorting of variable declarations within the same block.
@@ -144,6 +144,6 @@ export const eslintPedanticConfig = {
     // ✅ eslint/symbol-description
     // Require symbol descriptions.
     // Improves debugging.
-    "eslint/symbol-description": "error",
+    'eslint/symbol-description': 'error',
   },
 } satisfies OxlintConfig;
