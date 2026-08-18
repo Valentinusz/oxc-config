@@ -4,6 +4,6 @@ export const importPedanticConfig = {
   rules: {
     // ❌ import/max-dependencies
     // Forbid modules to have too many dependencies (`import` statements only).
-    // Useful but too limiting.
+    // 🔒 Too limiting.
   },
 } satisfies OxlintConfig;
