@@ -1,9 +1,9 @@
-import { eslintNurseryConfig } from './eslint-nursery.ts';
-import { eslintPedanticConfig } from './eslint-pedantic.ts';
-import { eslintPerfConfig } from './eslint-perf.ts';
-import { eslintRestrictionConfig } from './eslint-restriction.ts';
-import { eslintStyleConfig } from './eslint-style.ts';
-import { eslintSuspiciousConfig } from './eslint-suspicious.ts';
+import { eslintNurseryConfig } from './eslint-nursery.config.ts';
+import { eslintPedanticConfig } from './eslint-pedantic.config.ts';
+import { eslintPerfConfig } from './eslint-perf.config.ts';
+import { eslintRestrictionConfig } from './eslint-restriction.config.ts';
+import { eslintStyleConfig } from './eslint-style.config.ts';
+import { eslintSuspiciousConfig } from './eslint-suspicious.config.ts';
 
 import type { OxlintConfig } from 'oxlint';
 

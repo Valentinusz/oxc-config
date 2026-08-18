@@ -181,7 +181,7 @@ export const unicornPedanticConfig = {
 
     // ❌ unicorn/prefer-native-coercion-functions
     // Prefers built-in functions over custom ones with the same functionality.
-    // Superseded by TODO.
+    // Not useful enough.
 
     // ❌ unicorn/prefer-number-coercion
     // Prefer Number() over parseFloat() and base-10 parseInt().

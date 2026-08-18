@@ -17,7 +17,8 @@ export const eslintSuspiciousConfig = {
 
     // ✅ eslint/no-implied-eval
     // Disallow the use of eval()-like methods.
-    // Enabled by default.
+    // Eval and similar methods have bad performance and lead to security risks.
+    'eslint/no-implied-eval': 'error',
 
     // ✅ eslint/no-new
     // Disallow the use of the new operator when not part of an assignment or comparison.

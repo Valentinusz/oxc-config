@@ -13,7 +13,7 @@ export const reactPerfConfig = {
     'react/no-array-index-key': 'error',
 
     // ✅ react/no-object-type-as-default-prop
-    // 🏭 Superseded if React Compiler is used.
+    // 🏭 Superseded by React Compiler if used.
     // Disallows using object, array, function, class, regex, JSX, or new-constructed values as default values for
     // destructured React component props.
     // This creates a new reference on every render causing unnecessary rerenders.

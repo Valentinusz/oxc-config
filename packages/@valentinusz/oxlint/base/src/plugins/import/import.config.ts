@@ -1,9 +1,9 @@
-import { importCorrectnessConfig } from './import-correctness.ts';
-import { importNurseryConfig } from './import-nursery.ts';
-import { importPedanticConfig } from './import-pedantic.ts';
-import { importRestrictionConfig } from './import-restriction.ts';
-import { importStyleConfig } from './import-style.ts';
-import { importSuspiciousConfig } from './import-suspicious.ts';
+import { importCorrectnessConfig } from './import-correctness.config.ts';
+import { importNurseryConfig } from './import-nursery.config.ts';
+import { importPedanticConfig } from './import-pedantic.config.ts';
+import { importRestrictionConfig } from './import-restriction.config.ts';
+import { importStyleConfig } from './import-style.config.ts';
+import { importSuspiciousConfig } from './import-suspicious.config.ts';
 
 import type { OxlintConfig } from 'oxlint';
 
