@@ -6,8 +6,8 @@ export const importRestrictionConfig = {
   rules: {
     // ✅ import/extensions
     // Some file resolve algorithms allow you to omit the file extension within the import source path.
-    // Specifying extensions improves bundler performance.
-    // Extensions are not required for packages.
+    // ⚡Performance. Specifying extensions improves bundler performance.
+    // Extensions are not required when importing from packages.
     'import/extensions': [
       'error',
       {
@@ -25,11 +25,11 @@ export const importRestrictionConfig = {
 
     // ❌ import/no-cycle
     // Disallows cyclic dependencies.
-    // Too costly to check.
+    // Useful, but too costly to check.
 
     // ✅ import/no-default-export
     // Disallows modules from having default exports.
-    // No default export makes refactoring and auto-imports easier.
+    // 🏆 Best practice. No default export makes refactoring and auto-imports easier.
     // Some common config files that make use of default exports are allowed (see overrides below).
     'import/no-default-export': 'error',
 
@@ -46,7 +46,6 @@ export const importRestrictionConfig = {
     // ❌ import/no-webpack-loader-syntax
     // Forbids using Webpack loader syntax directly in import or require statements.
     // Not useful enough.
-    'import/no-webpack-loader-syntax': 'error',
 
     // ❌ import/unambiguous
     // Warns if a module could be mistaken for a script instead of an ES module.
