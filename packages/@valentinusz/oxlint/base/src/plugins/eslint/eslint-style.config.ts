@@ -24,7 +24,7 @@ export const eslintStyleConfig = {
 
     // ❌ eslint/default-param-last
     // Requires default parameters in functions to be the last ones.
-    // Superseded by TypeScript.
+    // ➡️ Handled by TypeScript.
 
     // ✅ eslint/func-name-matching
     // Requires function expression names to match the variable or property names they are assigned to.
@@ -62,16 +62,16 @@ export const eslintStyleConfig = {
 
     // ❌ eslint/id-denylist
     // Disallow specified identifiers.
-    // Useful but should be managed on a project level.
+    // 📁 Useful on project level.
 
     // ❌ eslint/id-length
     // Enforce a minimum and/or maximum identifier length convention by counting the graphemes for a given identifier.
-    // Useful but should be managed on a project level.
+    // 📁 Useful on project level.
 
     // ❌ eslint/id-match
     // Enforces a naming convention for identifiers by requiring each checked name to match a configured regular
     // expression.
-    // Useful but should be managed on a project level.
+    // 📁 Useful on project level.
 
     // ❌ eslint/init-declarations
     // Require or disallow initialization in variable declarations.

@@ -78,19 +78,20 @@ export const eslintRestrictionConfig = {
 
     // ❌ eslint/no-restricted-imports
     // Allows you to specify imports that you don’t want to use in your application.
-    // Useful but should be set on a project level.
+    // 📁 Useful on project level.
 
     // ❌ eslint/no-restricted-properties
     // Disallow certain properties on certain objects.
-    // Useful but should be set on a project level.
+    // 📁 Useful on project level.
 
-    // ❌ eslint/no-sequences
+    // ✅ eslint/no-sequences
     // Disallow comma operators.
-    // Rarely useful, leads to confusion.
+    // 🐛 Bug prevention. Rarely useful, leads to confusion.
+    "eslint/no-sequences": "error",
 
     // ❌ eslint/no-undefined
     // Disallow the use of the undefined value.
-    // Too restrictive. Leads to problems when using libraries that don't follow this rule.
+    // 🔒 Too restrictive. Leads to problems when using libraries that don't follow this rule.
 
     // ❌ eslint/no-use-before-define
     // Disallows using variables before they are defined.
@@ -103,9 +104,9 @@ export const eslintRestrictionConfig = {
 
     // ❌ eslint/no-void
     // Disallow void operators.
-    // Too restrictive, void is useful with async functions you don't want to await.
+    // 🔒 Too restrictive, void is useful with async functions you don't want to await.
 
-    // ❌ eslint/unicode-bom
+    // ✅ eslint/unicode-bom
     // Disallow the use of byte order mark.
     // UTF-8 is the standard for text files, thus BOM is not needed.
     'eslint/unicode-bom': 'error',
