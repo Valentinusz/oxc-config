@@ -4,7 +4,7 @@ export const eslintNurseryConfig = {
   rules: {
     // ❌ eslint/no-restricted-exports
     // Disallows specified names from being used as exported names.
-    // 📁 Useful, but has to be managed per-project.
+    // 📁 Useful on project level.
     // ❌ eslint/no-undef
     // Disallow the use of undeclared variables.
     // ➡️ Handled by TypeScript.
