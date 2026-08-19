@@ -1,22 +1,22 @@
 import { defineConfig } from 'oxlint';
 
-import { eslintConfig } from './plugins/eslint/eslint.config.ts';
+import { eslintPlugin } from './plugins/eslint/eslint.plugin.ts';
 import { importConfig } from './plugins/import/import.config.ts';
-import { jsdocConfig } from './plugins/jsdoc/jsdoc.config.ts';
-import { promiseConfig } from './plugins/promise/promise.config.ts';
-import { typescriptConfig } from './plugins/typescript/typescript.config.ts';
-import { unicornConfig } from './plugins/unicorn/unicorn.config.ts';
+import { jsdocPlugin } from './plugins/jsdoc/jsdoc.plugin.ts';
+import { promisePlugin } from './plugins/promise/promise.plugin.ts';
+import { typescriptPlugin } from './plugins/typescript/typescript.plugin.ts';
+import { unicornPlugin } from './plugins/unicorn/unicorn.plugin.ts';
 
 export const oxlintConfig = defineConfig({
   // all oxc rules are enabled by default, so no separate module is created
   plugins: ['oxc'],
   extends: [
-    eslintConfig,
+    eslintPlugin,
     importConfig,
-    jsdocConfig,
-    promiseConfig,
-    typescriptConfig,
-    unicornConfig,
+    jsdocPlugin,
+    promisePlugin,
+    typescriptPlugin,
+    unicornPlugin,
   ],
   options: {
     reportUnusedDisableDirectives: 'error',

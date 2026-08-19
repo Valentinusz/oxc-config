@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "packages:build": "pnpm -r build",
+    "packages:build": "pnpm run --recursive --aggregate-output build",
     "fmt:format": "oxfmt --write",
     "fmt:check": "oxfmt --check",
     "lint:fix": "oxlint --fix",

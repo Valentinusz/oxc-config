@@ -1,7 +1,8 @@
-﻿import type {OxlintConfig} from 'oxlint';
-import {reactPerfPerf} from "./react-perf.perf.ts";
+﻿import { reactPerfPerf } from './react-perf.perf.ts';
+
+import type { OxlintConfig } from 'oxlint';
 
 export const reactPerfPlugin = {
-    plugins: ['react-perf'],
-    extends: [reactPerfPerf]
+  plugins: ['react-perf'],
+  extends: [reactPerfPerf],
 } satisfies OxlintConfig;
