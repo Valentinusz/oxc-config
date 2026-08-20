@@ -6,6 +6,7 @@ import { jsdocStyle } from './jsdoc.style.ts';
 import type { OxlintConfig } from 'oxlint';
 
 export const jsdocPlugin = {
+  // ℹ️ All jsdoc rules enforce correct use.
   plugins: ['jsdoc'],
   extends: [jsdocCorrectness, jsdocPedantic, jsdocRestriction, jsdocStyle],
 } satisfies OxlintConfig;
