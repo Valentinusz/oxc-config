@@ -1,0 +1,35 @@
+name: 'Verify'
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+      - development
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    container:
+      image: node:24-alpine
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Setup pnpm
+        uses: pnpm/setup@c9883cc79df532ad1a7b81bf9ab944ceb090d65c # v2.0.0
+        with:
+          runtime: node@24
+          cache: true
+          install: false
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Format check
+        run: pnpm run fmt:check
+
+      - name: Lint check
+        run: pnpm run lint:check
+
+      - name: TypeScript check
+        run: pnpm run typescript:check

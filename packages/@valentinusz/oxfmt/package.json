@@ -1,8 +1,7 @@
 {
   "name": "@valentinusz/oxfmt-config",
   "version": "1.0.0",
-  "private": true,
-  "description": "",
+  "description": "Oxfmt configuration",
   "type": "module",
   "main": "index.js",
   "types": "index.d.ts",

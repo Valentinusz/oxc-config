@@ -1,8 +1,7 @@
 {
   "name": "@valentinusz/oxlint-config",
   "version": "1.0.0",
-  "private": true,
-  "description": "",
+  "description": "Base Oxlint configuration",
   "type": "module",
   "main": "index.js",
   "types": "index.d.ts",

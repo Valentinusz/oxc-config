@@ -2,9 +2,11 @@
   "name": "valentinusz-config",
   "version": "0.0.0",
   "private": true,
+  "description": "Shared Oxc configuration for my projects",
   "type": "module",
   "scripts": {
     "packages:build": "pnpm --recursive --aggregate-output exec vite build",
+    "packages:publish": "pnpm --recursive publish --no-git-checks --provenance",
     "fmt:format": "oxfmt --write",
     "fmt:check": "oxfmt --check",
     "lint:fix": "oxlint --fix",
