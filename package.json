@@ -4,11 +4,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "packages:build": "pnpm run --recursive --aggregate-output build",
+    "packages:build": "pnpm --recursive --aggregate-output exec vite build",
     "fmt:format": "oxfmt --write",
     "fmt:check": "oxfmt --check",
     "lint:fix": "oxlint --fix",
-    "lint:check": "oxlint --check"
+    "lint:check": "oxlint",
+    "typescript:check": "pnpm --recursive --aggregate-output exec tsc --noEmit",
+    "verify": "pnpm run fmt:check && pnpm run lint:check && pnpm run typescript:check"
   },
   "devDependencies": {
     "@types/node": "^24.13.3",

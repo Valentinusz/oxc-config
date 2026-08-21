@@ -1,4 +1,4 @@
-﻿import { typescriptNursery } from './typescript.nursery.ts';
+import { typescriptNursery } from './typescript.nursery.ts';
 import { typescriptPedantic } from './typescript.pedantic.ts';
 import { typescriptRestriction } from './typescript.restriction.ts';
 import { typescriptStyle } from './typescript.style.ts';

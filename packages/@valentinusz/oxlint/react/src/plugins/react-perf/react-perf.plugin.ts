@@ -1,4 +1,4 @@
-﻿import { reactPerfPerf } from './react-perf.perf.ts';
+import { reactPerfPerf } from './react-perf.perf.ts';
 
 import type { OxlintConfig } from 'oxlint';
 

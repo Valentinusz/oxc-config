@@ -1,4 +1,4 @@
-﻿import { unicornCorrectness } from './unicorn.correctness.ts';
+import { unicornCorrectness } from './unicorn.correctness.ts';
 import { unicornPedantic } from './unicorn.pedantic.ts';
 import { unicornPerf } from './unicorn.perf.ts';
 import { unicornRestriction } from './unicorn.restriction.ts';

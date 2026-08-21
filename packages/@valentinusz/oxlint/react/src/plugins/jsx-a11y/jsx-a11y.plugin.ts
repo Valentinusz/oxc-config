@@ -1,4 +1,4 @@
-﻿import { jsxA11yCorrectness } from './jsx-a11y.correctness.ts';
+import { jsxA11yCorrectness } from './jsx-a11y.correctness.ts';
 import { jsxA11yRestriction } from './jsx-a11y.restriction.ts';
 
 import type { OxlintConfig } from 'oxlint';

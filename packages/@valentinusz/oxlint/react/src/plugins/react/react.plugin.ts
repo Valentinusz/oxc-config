@@ -1,4 +1,4 @@
-﻿import { reactCorrectness } from './react.correctness.ts';
+import { reactCorrectness } from './react.correctness.ts';
 import { reactNursery } from './react.nursery.ts';
 import { reactPedantic } from './react.pedantic.ts';
 import { reactPerf } from './react.perf.ts';
