@@ -1,10 +1,13 @@
 {
-  "name": "@valentinusz/oxfmt-config",
+  "name": "@valentinusz/oxlint-config",
   "version": "1.0.0",
-  "description": "Oxfmt configuration",
+  "description": "Base Oxlint configuration",
   "type": "module",
   "main": "index.js",
   "types": "index.d.ts",
+  "imports": {
+    "#lib/*": "./src/*"
+  },
   "exports": {
     ".": "./dist/index.js"
   },
@@ -13,6 +16,7 @@
     "vite": "catalog:"
   },
   "peerDependencies": {
-    "oxfmt": "catalog:"
+    "oxlint": "catalog:",
+    "oxlint-tsgolint": "catalog:"
   }
 }

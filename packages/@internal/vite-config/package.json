@@ -1,7 +1,8 @@
 {
-  "name": "@valentinusz/oxfmt-config",
+  "name": "@internal/vite-config",
   "version": "1.0.0",
-  "description": "Oxfmt configuration",
+  "private": "true",
+  "description": "Internal Vite config for building packages",
   "type": "module",
   "main": "index.js",
   "types": "index.d.ts",
@@ -9,10 +10,6 @@
     ".": "./dist/index.js"
   },
   "devDependencies": {
-    "@internal/vite-config": "workspace:*",
     "vite": "catalog:"
-  },
-  "peerDependencies": {
-    "oxfmt": "catalog:"
   }
 }

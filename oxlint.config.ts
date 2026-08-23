@@ -1,6 +1,3 @@
-import { oxlintConfig } from '@valentinusz/oxlint-config';
-import { defineConfig } from 'oxlint';
+import { defineConfig } from '@valentinusz/oxlint-config';
 
-export default defineConfig({
-  extends: [oxlintConfig],
-});
+export default defineConfig({});
