@@ -24,9 +24,7 @@ jobs:
           install: false
 
       - name: Install dependencies
-        run: |
-          pnpm install --frozen-lockfile
-          pnpm run packages:build
+        run: pnpm install --frozen-lockfile
 
       - name: Format check
         run: pnpm run fmt:check
