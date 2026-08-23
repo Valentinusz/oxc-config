@@ -1,4 +1,4 @@
-import { CONFIG_FILES } from '@/constants.ts';
+import { CONFIG_FILES } from '../../constants.ts';
 
 import type { OxlintConfig } from 'oxlint';
 
