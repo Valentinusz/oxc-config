@@ -1,4 +1,4 @@
-import { CONFIG_FILES } from '../../constants.ts';
+import { CONFIG_FILES } from '@/constants.ts';
 
 import type { OxlintConfig } from 'oxlint';
 
@@ -39,8 +39,8 @@ export const importRestrictionConfig = {
 
     // ✅ import/no-relative-parent-imports
     // Forbids importing modules from parent directories using relative paths.
-    // This restriction enforces tree-like folder structures instead of complex graph-like structures, making large
-    // codebases easier to maintain.
+    // 🏆 Best practice. This restriction enforces tree-like folder structures instead of complex graph-like structures,
+    // making large codebases easier to maintain.
     'import/no-relative-parent-imports': 'error',
 
     // ❌ import/no-webpack-loader-syntax

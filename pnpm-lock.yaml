@@ -32,6 +32,12 @@ importers:
       '@types/react-dom':
         specifier: ^19.2.4
         version: 19.2.4(@types/react@19.2.18)
+      '@valentinusz/oxfmt-config':
+        specifier: workspace:*
+        version: link:packages/@valentinusz/oxfmt
+      '@valentinusz/oxlint-config':
+        specifier: workspace:*
+        version: link:packages/@valentinusz/oxlint/base
       oxfmt:
         specifier: 'catalog:'
         version: 0.63.0
