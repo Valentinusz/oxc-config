@@ -1,4 +1,4 @@
-name: publish.yaml
+name: Publish
 on:
   push:
     tags:
@@ -12,18 +12,10 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     container:
-      image: node:20-alpine
-
+      image: node:24-alpine
     steps:
-      - uses: actions/checkout@v6
-
-      - name: Setup pnpm
-        uses: pnpm/setup@v1 # v2.0.0
-        with:
-          runtime: node@24
-          version: 11
-          cache: true
-          install: false
+      - uses: actions/checkout@v7
+      - uses: ./.github/actions/setup
 
       - name: Configure registry auth
         run: |
@@ -31,12 +23,6 @@ jobs:
           echo "//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}" >> .npmrc
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Build
-        run: pnpm run packages:build
 
       - name: Publish packages
         run: pnpm run packages:publish

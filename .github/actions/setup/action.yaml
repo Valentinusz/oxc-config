@@ -1,0 +1,21 @@
+name: Setup
+author: Valentinusz
+description: Common setup for all workflows
+runs:
+  using: composite
+  steps:
+    - name: Setup pnpm
+      uses: pnpm/setup@v2
+      with:
+        runtime: node@24
+        version: 11
+        cache: true
+        install: false
+
+    - name: Install dependencies
+      run: pnpm install --frozen-lockfile
+      shell: bash
+
+    - name: Build
+      run: pnpm run packages:build
+      shell: bash

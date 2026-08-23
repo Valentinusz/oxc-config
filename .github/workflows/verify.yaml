@@ -13,20 +13,8 @@ jobs:
     container:
       image: node:24-alpine
     steps:
-      - uses: actions/checkout@v6
-
-      - name: Setup pnpm
-        uses: pnpm/setup@c9883cc79df532ad1a7b81bf9ab944ceb090d65c # v2.0.0
-        with:
-          runtime: node@24
-          version: 11
-          cache: true
-          install: false
-
-      - name: Install dependencies
-        run: |
-          pnpm install --frozen-lockfile
-          pnpm run packages:build
+      - uses: actions/checkout@v7
+      - uses: ./.github/actions/setup
 
       - name: Format check
         run: pnpm run fmt:check
