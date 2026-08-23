@@ -2,6 +2,9 @@
   "name": "@valentinusz/oxlint-config",
   "version": "1.0.0",
   "description": "Base Oxlint configuration",
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "main": "index.js",
   "types": "index.d.ts",

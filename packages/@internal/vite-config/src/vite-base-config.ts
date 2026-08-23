@@ -25,6 +25,7 @@ export function viteBaseConfig({
         fileName: 'index',
       },
       ssr: true,
+      sourcemap: true,
       rolldownOptions: {
         external: autoExternalizeDependencies ? getAllDependencyNames(packageJson) : undefined,
       },
