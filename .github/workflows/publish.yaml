@@ -26,4 +26,4 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish packages
-        run: pnpm run packages:publish
+        run: pnpm run packages:publish --no-provenance
