@@ -16,15 +16,11 @@
   },
   "devDependencies": {
     "@types/node": "^24.13.3",
-    "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.4",
     "@valentinusz/oxfmt-config": "workspace:*",
     "@valentinusz/oxlint-config": "workspace:*",
     "oxfmt": "catalog:",
     "oxlint": "catalog:",
     "oxlint-tsgolint": "catalog:",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8",
     "typescript": "~6.0.2",
     "unplugin-dts": "^1.0.3",
     "vite": "catalog:"
