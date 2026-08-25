@@ -1,3 +1,4 @@
+// oxlint-disable-next-line import/no-nodejs-modules
 import { resolve } from 'node:path';
 import dts from 'unplugin-dts/vite';
 import { defineConfig } from 'vite';
