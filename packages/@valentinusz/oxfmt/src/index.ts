@@ -1,2 +1,2 @@
-export type { DefineConfigOptions } from './define-config.ts';
-export { defineConfig } from './define-config.ts';
+export type { DefineOxfmtConfigOptions } from './define-oxfmt-config.ts';
+export { defineOxfmtConfig } from './define-oxfmt-config.ts';

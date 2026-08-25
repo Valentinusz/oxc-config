@@ -1,2 +1,6 @@
-export type { OxlintCustomOptions, DefineConfigArgs } from './define-config.ts';
-export { defineConfig } from './define-config.ts';
+export type {
+  OxlintPresetsConfig,
+  DefineOxlintConfigOptions,
+  DefineOxlintConfigReturn,
+} from './define-oxlint-config.ts';
+export { defineOxlintConfig } from './define-oxlint-config.ts';
