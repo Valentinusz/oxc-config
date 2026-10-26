@@ -1,6 +1,3 @@
-export type {
-  OxlintPresetsConfig,
-  DefineOxlintConfigOptions,
-  DefineOxlintConfigReturn,
-} from './define-oxlint-config.ts';
-export { defineOxlintConfig } from './define-oxlint-config.ts';
+export { oxlintConfigBase } from '#lib/configs/base.ts';
+export { oxlintConfigReact } from '#lib/configs/react.ts';
+export { CONFIG_FILES } from '#lib/constants.ts';

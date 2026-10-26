@@ -1,6 +1,6 @@
 {
   "name": "oxc-config",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "private": true,
   "description": "Shared Oxc configuration for my projects",
   "type": "module",
@@ -22,7 +22,7 @@
     "oxlint": "catalog:",
     "oxlint-tsgolint": "catalog:",
     "typescript": "~6.0.2",
-    "unplugin-dts": "^1.0.3",
+    "unplugin-dts": "^1.1.2",
     "vite": "catalog:"
   }
 }

@@ -2,6 +2,18 @@ import type { OxlintConfig } from 'oxlint';
 
 export const reactSuspicious = {
   rules: {
+    // ✅ react/capitalized-calls
+    // Reports React Compiler diagnostics for capitalized function calls.
+    'react/capitalized-calls': 'error',
+
+    // ✅ react/exhaustive-effect-dependencies
+    // Verifies effect dependencies required by the React Compiler.
+    'react/exhaustive-effect-dependencies': 'error',
+
+    // ✅ react/hooks
+    // Reports React Hook usage that is unsupported by the compiler.
+    'react/hooks': 'error',
+
     // ✅ react/iframe-missing-sandbox
     // Enforce the sandbox attribute on iframe elements.
     // 🔒 Security.
@@ -12,6 +24,10 @@ export const reactSuspicious = {
     // in JSX statements.
     // 🐛 Bug prevention.
     'react/jsx-no-comment-textnodes': 'error',
+
+    // ✅ react/memo-dependencies
+    // Reports unsupported dependency patterns in manual memoization.
+    'react/memo-dependencies': 'error',
 
     // ❌ react/jsx-no-script-url
     // Disallow usage of `javascript:` URLs.

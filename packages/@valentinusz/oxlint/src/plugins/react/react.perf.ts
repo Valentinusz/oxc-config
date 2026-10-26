@@ -12,6 +12,11 @@ export const reactPerf = {
     // ⚡ Performance. If the array is sorted or an element is prepended an index-based list will fully rerender.
     'react/no-array-index-key': 'error',
 
+    // ✅ react/no-deriving-state-in-effects
+    // Reports state derived from other values inside effects.
+    // ⚡ Performance. Deriving state in an effect adds an avoidable render cycle.
+    'react/no-deriving-state-in-effects': 'error',
+
     // ✅ react/no-object-type-as-default-prop
     // Disallows using object, array, function, class, regex, JSX, or new-constructed values as default values for
     // destructured React component props.

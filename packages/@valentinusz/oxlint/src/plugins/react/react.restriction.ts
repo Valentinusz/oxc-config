@@ -22,6 +22,10 @@ export const reactRestriction = {
     // Allows you to configure a list of forbidden elements and to specify their desired replacements.
     // 📁 Project specific.
 
+    // ✅ react/invariant
+    // Reports violations of React Compiler invariants.
+    'react/invariant': 'error',
+
     // ❌ react/jsx-filename-extension
     // Enforces consistent use of the .jsx file extension.
     // ➡️ Handled by TypeScript (tsc can only handle files ending in .tsx).
@@ -68,5 +72,21 @@ export const reactRestriction = {
     // Enforces that React components are written as function components instead of class components.
     // 🏆 Best practice.
     'react/prefer-function-component': 'error',
+
+    // ✅ react/rule-suppression
+    // Reports suppressions of React Compiler diagnostics.
+    'react/rule-suppression': 'error',
+
+    // ✅ react/syntax
+    // Reports syntax that is unsupported by the React Compiler.
+    'react/syntax': 'error',
+
+    // ✅ react/todo
+    // Reports React Compiler TODO diagnostics.
+    'react/todo': 'error',
+
+    // ✅ react/unsupported-syntax
+    // Reports syntax that is unsupported by the React Compiler.
+    'react/unsupported-syntax': 'error',
   },
 } satisfies OxlintConfig;

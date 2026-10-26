@@ -1,7 +1,7 @@
 {
   "name": "@valentinusz/oxlint-config",
-  "version": "0.0.1",
-  "description": "Base Oxlint configuration",
+  "version": "1.89.0",
+  "description": "Oxlint configuration",
   "files": [
     "dist"
   ],

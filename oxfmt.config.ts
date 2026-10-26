@@ -1,3 +1,1 @@
-import { defineOxfmtConfig } from '@valentinusz/oxfmt-config';
-
-export default defineOxfmtConfig({});
+export { oxfmtConfig as default } from '@valentinusz/oxfmt-config';

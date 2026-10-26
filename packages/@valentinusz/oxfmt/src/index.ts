@@ -1,2 +1,21 @@
-export type { DefineOxfmtConfigOptions } from './define-oxfmt-config.ts';
-export { defineOxfmtConfig } from './define-oxfmt-config.ts';
+import type { OxfmtConfig } from 'oxfmt';
+
+export const oxfmtConfig = {
+  singleQuote: true,
+  trailingComma: 'all',
+  sortImports: {
+    newlinesBetween: false,
+    groups: [
+      'builtin',
+      'external',
+      'subpath',
+      'internal',
+      'parent',
+      'sibling',
+      'index',
+      'style',
+      'side_effect',
+      'unknown',
+    ],
+  },
+} satisfies OxfmtConfig;

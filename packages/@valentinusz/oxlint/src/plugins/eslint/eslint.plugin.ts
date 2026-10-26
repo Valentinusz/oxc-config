@@ -1,4 +1,5 @@
 import type { OxlintConfig } from 'oxlint';
+import { eslintCorrectness } from './eslint.correctness.ts';
 import { eslintNursery } from './eslint.nursery.ts';
 import { eslintPedantic } from './eslint.pedantic.ts';
 import { eslintPerf } from './eslint.perf.ts';
@@ -9,7 +10,8 @@ import { eslintSuspicious } from './eslint.suspicious.ts';
 export const eslintPlugin = {
   plugins: ['eslint'],
   extends: [
-    // ℹ️ All eslint correctness rules are enabled by default, so no separate config is created for it.
+    // ℹ️ All other eslint correctness rules are enabled by default.
+    eslintCorrectness,
     eslintNursery,
     eslintPedantic,
     eslintPerf,
